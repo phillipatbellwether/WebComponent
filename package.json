@@ -1,0 +1,22 @@
+{
+  "name": "webcomponent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "list.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillipatbellwether/WebComponent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phillipatbellwether/WebComponent/issues"
+  },
+  "homepage": "https://github.com/phillipatbellwether/WebComponent#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
