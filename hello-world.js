@@ -44,4 +44,9 @@ app.post('/test', (req, res) => {
     res.send([{a:1}, {b:2}]);
 });
 
+app.get('/test', (req, res) => {
+    console.log("Hello test");
+    res.send([{a:1}, {b:2}]);
+});
+
 app.listen(port, () => console.log(`Hello world app listening on port ${port}!`))

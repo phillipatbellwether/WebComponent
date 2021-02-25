@@ -6,6 +6,9 @@
 </template>
 <!-- Child elements of container with class="list" becomes list items -->
 <div id="users">
+  <button id="rest">
+    REST
+  </button>
 
   <input class="search" placeholder="Search" />
   <button class="sort" data-sort="name">
@@ -26,6 +29,18 @@
             defer
         ></script>
 <script>
+    document.getElementById("rest").addEventListener("click", () => {
+      // var oReq = new XMLHttpRequest();
+      // oReq.open("GET", "/test");
+      // oReq.send();
+      fetch(
+        '/test',
+        { method: 'GET' }
+      )
+      .then( response => response.json() )
+      .then( json => console.log(json) )
+        .catch( error => console.error('error:', error) );
+      });
       var options = {
       valueNames: [ 'name', 'born' ],
       // Since there are no elements in the list, this will be used as template.
